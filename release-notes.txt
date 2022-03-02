@@ -1,0 +1,81 @@
+CHANGELOG
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2017 June 5 - Version 1.2
+
+- added:
+    - added: Weather widget on footer
+        - 5 days forecast
+        - weather icons from https://erikflowers.github.io/weather-icons/
+        - consumes OpenWeatherMap Free API through Cmfcmf\OpenWeatherMap PHP library
+        - settings added on backend (°C/°F, cache-time, location)
+    - added: New page under settings named "Theme" where user can:
+        - change buttons/selections colours
+        - change background image-patterns used on site
+        - set display opacity for background image-patterns
+        - change hotel logos
+    - added: Back-to-top button
+    - added: Subscribe to Newsletter form on footer
+    - added: New Processwire modules:
+        - DatabaseBackups for taking database backups
+        - VersionControl for keeping content history with rollback feature
+        - ClearCacheAdmin for clearing caches
+        - AutoSmush for optimizing images using http://resmush.it/ free web-service
+    - added: hoverCSS and applied hover background-change effect on buttons
+
+- bugfixes:
+    - fixed: scrollbar was visible when viewing images full-screen
+
+- improved:
+    - improved: Replaced Slick-carousel with the new version of Owl-Carousel(2)
+    - improved: Moved social icons below footer and changed style
+    - improved: Moved Settings-page under Admin-page for clarity
+    - improved: Carousel slider UX
+        - visible panels for tablet 2 and for desktop 3 (better responsive)
+        - draggable cursor on hover, repositioned arrows, added bullets
+        - changed panels style
+    - improved: Image sliders
+            - moved full-screen button on top-right and made it visible only on hover/tap
+            - draggable cursor on hover
+            - added zoom-effect on images
+            - added image-preloader to prevent images from not showing fast
+    - improved: Simplified languages dropdown by keeping only local language name
+    - improved: added resized-images of demo in final package so that initial site rendering is fast
+    - improved: Refactored/renamed template partial views
+    - improved: updated to latest Processwire 3.0.63
+    - improved: many small UX/UI improvements
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2017 February 21 - Version 1.1
+
+- added:
+    - added: NEW booking-engine providers:
+        - Beds24
+        - BookWize
+        - eZeeReservation
+        - FreeToBook
+        - WuBook
+    - added: menu page called: "booking" so that the user can send a booking request through a form
+    - added: new search-form called booking.on.request that posts on the newly created "booking" page
+    - added: loading indicator for panel button & forms submit button
+    - added: extra 360 VR images on DKO demo on all rooms
+
+- bugfixes:
+    - fixed: padding on menu logo
+    - fixed: removed unwanted outline, bg color from various states :focus, :active etc
+
+- improved:
+    - improved: added image on 404 page
+    - improved: removed border-radius from mobile menu buttons
+    - improved: child pages on sections-layout pages displayed on top-right
+    - improved: changed image VR logo overlay
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2017 February 1 - Version 1.0
+
+- Initial release
+
+-----------------------------------------------------------------------------------------------------------------------

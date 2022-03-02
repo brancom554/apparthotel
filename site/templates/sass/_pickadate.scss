@@ -1,0 +1,31 @@
+.picker__holder {
+  border-radius: 0;
+}
+.picker__nav--next:hover,
+.picker__nav--prev:hover,
+.picker--focused .picker__day--highlighted,
+.picker__day--highlighted:hover,
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover,
+.picker__button--clear:focus,
+.picker__button--close:focus,
+.picker__button--today:focus,
+.picker__button--clear:hover,
+.picker__button--close:hover,
+.picker__button--today:hover
+{
+  background-color: $color_anzac_approx_light;
+}
+
+.picker__button--clear:focus, .picker__button--close:focus, .picker__button--today:focus {
+  border-color: $color_anzac_approx_dark;
+}
+
+.picker__input[readonly], .picker__input:hover {
+  background: #fff;
+  cursor: text;
+}
+
+.picker--opened .picker__holder {
+  outline: 0 none;
+}

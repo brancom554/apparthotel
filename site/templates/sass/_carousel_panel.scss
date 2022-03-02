@@ -1,0 +1,101 @@
+.owl-theme {
+  .owl-dots {
+    z-index: 9;
+    position: relative;
+  }
+  .owl-nav {
+    margin-top: -10px;
+    position: absolute;
+    width: 100%;
+
+    a {
+      display: inline-block;
+      padding: 7px 25px;
+      font-size: 20px;
+      color: #D6D6D6;
+      z-index: 10;
+      position: relative;
+
+      &:hover{
+        color: #869791;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.owl-stage {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;;
+  }
+}
+
+.carousel-panel {
+
+  overflow: hidden;
+
+  .panel {
+    border-radius: 0;
+  }
+
+  .panel-body {
+    position: relative;
+    height: 170px;
+    padding: 15px 25px;
+
+    .title-cropper {
+      display: inline-block;
+      float: right;
+      width: 40px;
+      height: 20px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    p{
+      font-size: 16px;
+    }
+
+    .room-price {
+      padding-top: 14px;
+      top: -35px;
+      right: 15px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 16px;
+      border-radius: 33px;
+      height: 64px;
+      width: 64px;
+      background-color: $color_anzac_approx_dark;
+      color: white;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0px 0px 6px rgba(150, 137, 121, 1), 0px -1px 1px rgba(150, 137, 121, 1), 0px 1px 5px rgba(150, 137, 121, 1);
+
+      .from {
+        display: block;
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .panel-footer {
+    border-top: none;
+    background: none;
+    padding: 25px;
+
+    a {
+      width: 100%;
+    }
+  }
+}

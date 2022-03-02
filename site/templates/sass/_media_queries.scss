@@ -1,0 +1,136 @@
+@media(max-width: 767px) {
+  .pull-right.or-not-pull{
+    float: none !important;
+  }
+  .slider {
+    height: 300px;
+  }
+  .phoneLink img {
+    margin-right: 20px;
+  }
+  .prefooter img {
+    margin-right: 10px;
+  }
+  .recognitions img {
+    margin: 0 10px;
+  }
+
+  .more-rooms, .experience, .recognitions {
+    .roomsMain {
+      padding-top: 0px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .slider {
+    height: 550px;
+  }
+  .phoneLink img {
+    margin-right: 0;
+  }
+  .prefooter img {
+    margin-right: 20px;
+  }
+}
+
+@media(min-width: 992px) {
+  .slider {
+    height: 650px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .footer-col{
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  #menu-main {
+
+    .nav li a {
+      &:hover {
+        background-color: transparent;
+        background: none;
+      }
+      &.active {
+        background-color: transparent;
+        background: none;
+        color: $color_anzac_approx_dark;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #menu-main {
+
+    .navbar-default .navbar-toggle {
+      margin-right: 0px;
+    }
+    .navbar-nav > li {
+      float: none;
+    }
+    .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar-nav {
+      float: none;
+    }
+    .nav.navbar-nav {
+      clear: both;
+      float: left;
+      margin: 0 0 0 -15px;
+      width: 100%;
+    }
+
+    .navbar-fixed-bottom, .navbar-fixed-top {
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+    .navbar-collapse.collapse {
+      display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+      display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+      display:block !important;
+    }
+    .navbar-header {
+      float:none;
+    }
+    .navbar-fixed-top .navbar-collapse {
+      max-height: 340px;
+    }
+    .navbar-collapse.in {
+      overflow-y: auto !important;
+    }
+    .navbar-collapse {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+      overflow-x: visible !important;
+      -webkit-overflow-scrolling: touch !important;
+      border-top: 1px solid transparent !important;
+      -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.1) !important;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .slider {
+    height: 650px;
+  }
+  .nav > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

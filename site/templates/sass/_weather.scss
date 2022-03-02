@@ -1,0 +1,81 @@
+.weather {
+
+  .conditions-container {
+    padding: 20px 0px;
+  }
+
+  .city{
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .max-width-col {
+    max-width: 100px;
+  }
+
+  i{
+    &.big {
+      font-size: 60px;
+      padding: 24px 0 21px;
+    }
+    &.small {
+      font-size: 20px;
+      padding: 5px 0;
+    }
+  }
+
+  .unit-change {
+    color: white;
+    opacity: 0.6;
+
+    &:hover {
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  .day-col {
+    width: 36px;
+    display: inline-block;
+  }
+
+  .temperature-col {
+    width: 40px;
+    display: inline-block;
+  }
+
+  .degrees {
+    margin: 0 0 5px;
+    position: relative;
+
+    .temperature {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 900
+    }
+
+    .symbol {
+      position: absolute;
+      top: 0;
+      font-size: 18px;
+      line-height: 23px;
+      padding-left: 5px;
+    }
+  }
+
+  hr {
+    width: 100%;
+    border-color: rgba(221, 221, 221, 0.4);
+    margin: 0px 0 10px;
+  }
+
+  .temperature-small {
+    white-space: nowrap;
+  }
+
+  .weather-unhappy {
+    font-size: 70px;
+  }
+}

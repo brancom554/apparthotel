@@ -1,0 +1,1755 @@
+.grow img {
+  max-width: 100%;
+
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+a:hover .grow img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hover-zoom {
+  overflow: hidden;
+
+  .image {
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    .image {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.moving {
+  margin:0;
+  padding:0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clear: both;
+  background-position: center center;
+  background-size: cover;
+  -webkit-animation: moving 20s infinite; /* Chrome, Safari, Opera */
+  -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+  animation: moving 20s infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes moving {
+  from { -webkit-transform: scale(1); }
+  to { -webkit-transform: scale(1.1); }
+}
+@-moz-keyframes moving {
+  from { -moz-transform: scale(1); }
+  to { -moz-transform: scale(1.1); }
+}
+@-o-keyframes moving {
+  from { -o-transform: scale(1); }
+  to { -o-transform: scale(1.1); }
+}
+
+
+.pt-page-moveToLeft {
+  animation: moveToLeft .6s ease both;
+}
+.pt-page-moveFromLeft {
+  animation: moveFromLeft .6s ease both;
+}
+.pt-page-moveToRight {
+  animation: moveToRight .6s ease both;
+}
+.pt-page-moveFromRight {
+  animation: moveFromRight .6s ease both;
+}
+.pt-page-moveToTop {
+  animation: moveToTop .6s ease both;
+}
+.pt-page-moveFromTop {
+  animation: moveFromTop .6s ease both;
+}
+.pt-page-moveToBottom {
+  animation: moveToBottom .6s ease both;
+}
+.pt-page-moveFromBottom {
+  animation: moveFromBottom .6s ease both;
+}
+.pt-page-fade {
+  animation: fade .7s ease both;
+}
+.pt-page-moveToLeftFade {
+  animation: moveToLeftFade .7s ease both;
+}
+.pt-page-moveFromLeftFade {
+  animation: moveFromLeftFade .7s ease both;
+}
+.pt-page-moveToRightFade {
+  animation: moveToRightFade .7s ease both;
+}
+.pt-page-moveFromRightFade {
+  animation: moveFromRightFade .7s ease both;
+}
+.pt-page-moveToTopFade {
+  animation: moveToTopFade .7s ease both;
+}
+.pt-page-moveFromTopFade {
+  animation: moveFromTopFade .7s ease both;
+}
+.pt-page-moveToBottomFade {
+  animation: moveToBottomFade .7s ease both;
+}
+.pt-page-moveFromBottomFade {
+  animation: moveFromBottomFade .7s ease both;
+}
+.pt-page-moveToLeftEasing {
+  animation: moveToLeft .7s ease-in-out both;
+}
+.pt-page-moveToRightEasing {
+  animation: moveToRight .7s ease-in-out both;
+}
+.pt-page-moveToTopEasing {
+  animation: moveToTop .7s ease-in-out both;
+}
+.pt-page-moveToBottomEasing {
+  animation: moveToBottom .7s ease-in-out both;
+}
+@-webkit-keyframes moveToLeft {
+  from {
+  }
+  to {
+  }
+}
+@keyframes moveToLeft {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes moveFromLeft {
+  from {
+  }
+}
+@keyframes moveFromLeft {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes moveToRight {
+  from {
+  }
+  to {
+  }
+}
+@keyframes moveToRight {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes moveFromRight {
+  from {
+  }
+}
+@keyframes moveFromRight {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes moveToTop {
+  from {
+  }
+  to {
+  }
+}
+@keyframes moveToTop {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes moveFromTop {
+  from {
+  }
+}
+@keyframes moveFromTop {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes moveToBottom {
+  from {
+  }
+  to {
+  }
+}
+@keyframes moveToBottom {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes moveFromBottom {
+  from {
+  }
+}
+@keyframes moveFromBottom {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes fade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes fade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@-webkit-keyframes moveToLeftFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes moveToLeftFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+  }
+}
+@keyframes moveFromLeftFade {
+  from {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes moveToRightFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes moveToRightFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+  }
+}
+@keyframes moveFromRightFade {
+  from {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes moveToTopFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes moveToTopFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes moveFromTopFade {
+  from {
+    opacity: 0.3;
+  }
+}
+@keyframes moveFromTopFade {
+  from {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes moveToBottomFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes moveToBottomFade {
+  from {
+  }
+  to {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes moveFromBottomFade {
+  from {
+    opacity: 0.3;
+  }
+}
+@keyframes moveFromBottomFade {
+  from {
+    opacity: 0.3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%);
+  }
+}
+.pt-page-scaleDown {
+  animation: scaleDown .7s ease both;
+}
+.pt-page-scaleUp {
+  animation: scaleUp .7s ease both;
+}
+.pt-page-scaleUpDown {
+  animation: scaleUpDown .5s ease both;
+}
+.pt-page-scaleDownUp {
+  animation: scaleDownUp .5s ease both;
+}
+.pt-page-scaleDownCenter {
+  animation: scaleDownCenter .4s ease-in both;
+}
+.pt-page-scaleUpCenter {
+  animation: scaleUpCenter .4s ease-out both;
+}
+@-webkit-keyframes scaleDown {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scaleDown {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(.8);
+  }
+}
+@-webkit-keyframes scaleUp {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(.8);
+  }
+}
+@-webkit-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes scaleDownUp {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scaleDownUp {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes scaleDownCenter {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scaleDownCenter {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(.7);
+  }
+}
+@-webkit-keyframes scaleUpCenter {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes scaleUpCenter {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(.7);
+  }
+}
+.pt-page-rotateRightSideFirst {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateRightSideFirst .8s both ease-in;
+}
+.pt-page-rotateLeftSideFirst {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateLeftSideFirst .8s both ease-in;
+}
+.pt-page-rotateTopSideFirst {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateTopSideFirst .8s both ease-in;
+}
+.pt-page-rotateBottomSideFirst {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateBottomSideFirst .8s both ease-in;
+}
+.pt-page-flipOutRight {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipOutRight .5s both ease-in;
+}
+.pt-page-flipInLeft {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipInLeft .5s both ease-out;
+}
+.pt-page-flipOutLeft {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipOutLeft .5s both ease-in;
+}
+.pt-page-flipInRight {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipInRight .5s both ease-out;
+}
+.pt-page-flipOutTop {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipOutTop .5s both ease-in;
+}
+.pt-page-flipInBottom {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipInBottom .5s both ease-out;
+}
+.pt-page-flipOutBottom {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipOutBottom .5s both ease-in;
+}
+.pt-page-flipInTop {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: flipInTop .5s both ease-out;
+}
+.pt-page-rotateFall {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 0;
+  animation: rotateFall 1s both ease-in;
+}
+.pt-page-rotateOutNewspaper {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in;
+}
+.pt-page-rotateInNewspaper {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 50%;
+  animation: rotateInNewspaper .5s both ease-out;
+}
+.pt-page-rotatePushLeft {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotatePushLeft .8s both ease;
+}
+.pt-page-rotatePushRight {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotatePushRight .8s both ease;
+}
+.pt-page-rotatePushTop {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotatePushTop .8s both ease;
+}
+.pt-page-rotatePushBottom {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotatePushBottom .8s both ease;
+}
+.pt-page-rotatePullRight {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotatePullRight .5s both ease;
+}
+.pt-page-rotatePullLeft {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotatePullLeft .5s both ease;
+}
+.pt-page-rotatePullTop {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotatePullTop .5s both ease;
+}
+.pt-page-rotatePullBottom {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotatePullBottom .5s both ease;
+}
+.pt-page-rotateFoldRight {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateFoldRight .7s both ease;
+}
+.pt-page-rotateFoldLeft {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateFoldLeft .7s both ease;
+}
+.pt-page-rotateFoldTop {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateFoldTop .7s both ease;
+}
+.pt-page-rotateFoldBottom {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateFoldBottom .7s both ease;
+}
+.pt-page-rotateUnfoldLeft {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateUnfoldLeft .7s both ease;
+}
+.pt-page-rotateUnfoldRight {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateUnfoldRight .7s both ease;
+}
+.pt-page-rotateUnfoldTop {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateUnfoldTop .7s both ease;
+}
+.pt-page-rotateUnfoldBottom {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateUnfoldBottom .7s both ease;
+}
+.pt-page-rotateRoomLeftOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateRoomLeftOut .8s both ease;
+}
+.pt-page-rotateRoomLeftIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateRoomLeftIn .8s both ease;
+}
+.pt-page-rotateRoomRightOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateRoomRightOut .8s both ease;
+}
+.pt-page-rotateRoomRightIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateRoomRightIn .8s both ease;
+}
+.pt-page-rotateRoomTopOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateRoomTopOut .8s both ease;
+}
+.pt-page-rotateRoomTopIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateRoomTopIn .8s both ease;
+}
+.pt-page-rotateRoomBottomOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateRoomBottomOut .8s both ease;
+}
+.pt-page-rotateRoomBottomIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateRoomBottomIn .8s both ease;
+}
+.pt-page-rotateCubeLeftOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateCubeLeftOut .6s both ease-in;
+}
+.pt-page-rotateCubeLeftIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateCubeLeftIn .6s both ease-in;
+}
+.pt-page-rotateCubeRightOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateCubeRightOut .6s both ease-in;
+}
+.pt-page-rotateCubeRightIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateCubeRightIn .6s both ease-in;
+}
+.pt-page-rotateCubeTopOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateCubeTopOut .6s both ease-in;
+}
+.pt-page-rotateCubeTopIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateCubeTopIn .6s both ease-in;
+}
+.pt-page-rotateCubeBottomOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateCubeBottomOut .6s both ease-in;
+}
+.pt-page-rotateCubeBottomIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateCubeBottomIn .6s both ease-in;
+}
+.pt-page-rotateCarouselLeftOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateCarouselLeftOut .8s both ease;
+}
+.pt-page-rotateCarouselLeftIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateCarouselLeftIn .8s both ease;
+}
+.pt-page-rotateCarouselRightOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 0 50%;
+  animation: rotateCarouselRightOut .8s both ease;
+}
+.pt-page-rotateCarouselRightIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 100% 50%;
+  animation: rotateCarouselRightIn .8s both ease;
+}
+.pt-page-rotateCarouselTopOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateCarouselTopOut .8s both ease;
+}
+.pt-page-rotateCarouselTopIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateCarouselTopIn .8s both ease;
+}
+.pt-page-rotateCarouselBottomOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 0;
+  animation: rotateCarouselBottomOut .8s both ease;
+}
+.pt-page-rotateCarouselBottomIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 50% 100%;
+  animation: rotateCarouselBottomIn .8s both ease;
+}
+.pt-page-rotateSidesOut {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: -50% 50%;
+  animation: rotateSidesOut .5s both ease-in;
+}
+.pt-page-rotateSidesIn {
+  //Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
+  transform-origin: 150% 50%;
+  animation: rotateSidesIn .5s both ease-out;
+}
+.pt-page-rotateSlideOut {
+  animation: rotateSlideOut 1s both ease;
+}
+.pt-page-rotateSlideIn {
+  animation: rotateSlideIn 1s both ease;
+}
+@-webkit-keyframes rotateRightSideFirst {
+  0% {
+  }
+  40% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateRightSideFirst {
+  0% {
+  }
+  40% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(15deg);
+    opacity: .8;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotateLeftSideFirst {
+  0% {
+  }
+  40% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateLeftSideFirst {
+  0% {
+  }
+  40% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(-15deg);
+    opacity: .8;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotateTopSideFirst {
+  0% {
+  }
+  40% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateTopSideFirst {
+  0% {
+  }
+  40% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateX(15deg);
+    opacity: .8;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotateBottomSideFirst {
+  0% {
+  }
+  40% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateBottomSideFirst {
+  0% {
+  }
+  40% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateX(-15deg);
+    opacity: .8;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: scale(0.8) translateZ(-200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flipOutRight {
+  from {
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes flipOutRight {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipInLeft {
+  from {
+    opacity: 0.2;
+  }
+}
+@keyframes flipInLeft {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateY(-90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipOutLeft {
+  from {
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes flipOutLeft {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateY(-90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipInRight {
+  from {
+    opacity: 0.2;
+  }
+}
+@keyframes flipInRight {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateY(90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipOutTop {
+  from {
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes flipOutTop {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateX(90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipInBottom {
+  from {
+    opacity: 0.2;
+  }
+}
+@keyframes flipInBottom {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateX(-90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipOutBottom {
+  from {
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes flipOutBottom {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateX(-90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes flipInTop {
+  from {
+    opacity: 0.2;
+  }
+}
+@keyframes flipInTop {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-1000px) rotateX(90deg);
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes rotateFall {
+  0% {
+  }
+  20% {
+  }
+  40% {
+  }
+  60% {
+  }
+  100% {
+  }
+}
+@keyframes rotateFall {
+  0% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateZ(0deg);
+  }
+  20% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateZ(17deg);
+  }
+  60% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateZ(16deg);
+  }
+  100% {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateZ(17deg);
+  }
+}
+@-webkit-keyframes rotateOutNewspaper {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotateOutNewspaper {
+  from {
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotateInNewspaper {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotateInNewspaper {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-3000px) rotateZ(-360deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotatePushLeft {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotatePushLeft {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotatePushRight {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotatePushRight {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotatePushTop {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotatePushTop {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotatePushBottom {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotatePushBottom {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotatePullRight {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotatePullRight {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotatePullLeft {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotatePullLeft {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotatePullTop {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotatePullTop {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotatePullBottom {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotatePullBottom {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotateFoldRight {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotateFoldRight {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%) rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotateFoldLeft {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotateFoldLeft {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%) rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotateFoldTop {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotateFoldTop {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%) rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotateFoldBottom {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotateFoldBottom {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotateUnfoldLeft {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotateUnfoldLeft {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%) rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotateUnfoldRight {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotateUnfoldRight {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%) rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotateUnfoldTop {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotateUnfoldTop {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%) rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotateUnfoldBottom {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotateUnfoldBottom {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotateRoomLeftOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomLeftOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%) rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotateRoomLeftIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomLeftIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%) rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotateRoomRightOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomRightOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%) rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotateRoomRightIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomRightIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%) rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotateRoomTopOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomTopOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%) rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotateRoomTopIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomTopIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotateRoomBottomOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomBottomOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotateRoomBottomIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateRoomBottomIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%) rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotateCubeLeftOut {
+  0% {
+  }
+  50% {
+  }
+  100% {
+    opacity: .3;
+  }
+}
+@keyframes rotateCubeLeftOut {
+  0% {
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-50%) translateZ(-200px) rotateY(-45deg);
+  }
+  100% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%) rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotateCubeLeftIn {
+  0% {
+    opacity: .3;
+  }
+  50% {
+  }
+}
+@keyframes rotateCubeLeftIn {
+  0% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%) rotateY(90deg);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(50%) translateZ(-200px) rotateY(45deg);
+  }
+}
+@-webkit-keyframes rotateCubeRightOut {
+  0% {
+  }
+  50% {
+  }
+  100% {
+    opacity: .3;
+  }
+}
+@keyframes rotateCubeRightOut {
+  0% {
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(50%) translateZ(-200px) rotateY(45deg);
+  }
+  100% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(100%) rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotateCubeRightIn {
+  0% {
+    opacity: .3;
+  }
+  50% {
+  }
+}
+@keyframes rotateCubeRightIn {
+  0% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-100%) rotateY(-90deg);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-50%) translateZ(-200px) rotateY(-45deg);
+  }
+}
+@-webkit-keyframes rotateCubeTopOut {
+  0% {
+  }
+  50% {
+  }
+  100% {
+    opacity: .3;
+  }
+}
+@keyframes rotateCubeTopOut {
+  0% {
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+  }
+  100% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%) rotateX(90deg);
+  }
+}
+@-webkit-keyframes rotateCubeTopIn {
+  0% {
+    opacity: .3;
+  }
+  50% {
+  }
+}
+@keyframes rotateCubeTopIn {
+  0% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateX(-90deg);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+  }
+}
+@-webkit-keyframes rotateCubeBottomOut {
+  0% {
+  }
+  50% {
+  }
+  100% {
+    opacity: .3;
+  }
+}
+@keyframes rotateCubeBottomOut {
+  0% {
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(50%) translateZ(-200px) rotateX(-45deg);
+  }
+  100% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(100%) rotateX(-90deg);
+  }
+}
+@-webkit-keyframes rotateCubeBottomIn {
+  0% {
+    opacity: .3;
+  }
+  50% {
+  }
+}
+@keyframes rotateCubeBottomIn {
+  0% {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-100%) rotateX(90deg);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
+  }
+}
+@-webkit-keyframes rotateCarouselLeftOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselLeftOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-150%) scale(.4) rotateY(-65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselLeftIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselLeftIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(200%) scale(.4) rotateY(65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselRightOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselRightOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(200%) scale(.4) rotateY(65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselRightIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselRightIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-200%) scale(.4) rotateY(-65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselTopOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselTopOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-200%) scale(.4) rotateX(65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselTopIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselTopIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(200%) scale(.4) rotateX(-65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselBottomOut {
+  from {
+  }
+  to {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselBottomOut {
+  from {
+  }
+  to {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(200%) scale(.4) rotateX(-65deg);
+  }
+}
+@-webkit-keyframes rotateCarouselBottomIn {
+  from {
+    opacity: .3;
+  }
+}
+@keyframes rotateCarouselBottomIn {
+  from {
+    opacity: .3;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateY(-200%) scale(.4) rotateX(65deg);
+  }
+}
+@-webkit-keyframes rotateSidesOut {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotateSidesOut {
+  from {
+  }
+  to {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px) rotateY(90deg);
+  }
+}
+@-webkit-keyframes rotateSidesIn {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rotateSidesIn {
+  from {
+    opacity: 0;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px) rotateY(-90deg);
+  }
+}
+@-webkit-keyframes rotateSlideOut {
+  0% {
+  }
+  25% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .5;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+@keyframes rotateSlideOut {
+  0% {
+  }
+  25% {
+    opacity: .5;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@-webkit-keyframes rotateSlideIn {
+  0% {
+    opacity: .5;
+  }
+  25% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotateSlideIn {
+  0% {
+    opacity: .5;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px) translateX(200%);
+  }
+  25% {
+    opacity: .5;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateZ(0) translateX(0);
+  }
+}
+.pt-page-delay100 {
+  animation-delay: .1s;
+}
+.pt-page-delay180 {
+  animation-delay: .180s;
+}
+.pt-page-delay200 {
+  animation-delay: .2s;
+}
+.pt-page-delay300 {
+  animation-delay: .3s;
+}
+.pt-page-delay400 {
+  animation-delay: .4s;
+}
+.pt-page-delay500 {
+  animation-delay: .5s;
+}
+.pt-page-delay700 {
+  animation-delay: .7s;
+}
+.pt-page-delay1000 {
+  animation-delay: 1s;
+}

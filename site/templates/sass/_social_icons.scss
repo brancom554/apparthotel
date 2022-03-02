@@ -1,0 +1,55 @@
+ul.social {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 10px 0px 0;
+
+    a {
+      color: #666666;
+
+      &:hover, &:focus, &:active {
+        color: white;
+
+        .fa-facebook {
+          color:#3b5998;
+        }
+        .fa-tripadvisor {
+          color:#589442;
+        }
+        .fa-pinterest:hover {
+          color:#bd081c;
+        }
+        .fa-twitter:hover {
+          color:#00aced;
+        }
+        .fa-google-plus:hover {
+          color:#dd4b39;
+        }
+        .fa-youtube:hover {
+          color:#c3181e;
+        }
+        .fa-foursquare:hover {
+          color:#fa4778;
+        }
+        .fa-instagram:hover {
+          color:#a235b2;
+        }
+        .fa-comment:hover {
+          color: #000000;
+        }
+      }
+
+      i {
+        width: 35px;
+        height: 35px;
+        //border-radius: 30px;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 20%;
+      }
+    }
+  }
+}
